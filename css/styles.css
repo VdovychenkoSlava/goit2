@@ -534,7 +534,6 @@ button {
 		margin-bottom: 16px;
 		text-align: center;
 	}
-	
 	.footer-link-icons {
 		display: flex;
 		justify-content: center;
@@ -545,29 +544,22 @@ button {
 		background-color: var(--basic-logo-color);
 		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	}
-	
 	.footer-link-icons:hover,
 	.footer-link-icons:focus {
 		background-color: var(--footer-icons);
 	}
-	
 	.footer-icons-list {
 		display: flex;
 		gap: 16px;
 		margin-bottom: 72px;
 		justify-content: center;
 	}
-
 	.footer-subscribe {
 		margin-left: auto;
 	}
-	
-	.footer-subscribe-form {
-		
-	}
-	
 	.footer-subscribe-input {
-		width: 398px;
+		max-width: 398px;
+		width: 100%;
 		height: 40px;
 		border: 1px solid #FFFFFF;
 		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -578,8 +570,8 @@ button {
 		margin-bottom: 16px;
 		color: rgba(255, 255, 255, 0.6);
 	}
-	
 	.footer-subscribe-btn {
+		margin: 0 auto;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
@@ -596,7 +588,6 @@ button {
 		transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 			background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	}
-	
 	.footer-subscribe-btn:hover,
 	.footer-subscribe-btn:focus {
 		background-color: var(--hover-color);
@@ -930,6 +921,96 @@ button {
 	}
 
 
+	.footer {
+  	padding-top: 96px;
+  	padding-bottom: 96px;
+  	background: var(--title-color);
+	}
+
+	.footer-text {
+  	margin-top: 16px;
+  	font-size: 16px;
+  	line-height: 1.5;
+  	letter-spacing: 0.02em;
+  	color: var(--footer-color-text);
+	}	
+	.footer-inner {
+		padding-left: 108px;
+	  display: flex;
+		flex-wrap: wrap;
+		justify-content: start;
+		gap: 72px 24px;
+	}
+	.footer-container {
+	  max-width: 264px;
+	}
+	.footer-tittle {
+	  font-weight: 500;
+	  font-size: 16px;
+	  line-height: 1.5;
+	  letter-spacing: 0.02em;
+	  color: var(--white-color);
+	  margin-bottom: 16px;
+	}
+	.footer-link-icons {
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  width: 40px;
+	  height: 40px;
+	  border-radius: 50%;
+	  background-color: var(--basic-logo-color);
+	  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	.footer-link-icons:hover,
+	.footer-link-icons:focus {
+	  background-color: var(--footer-icons);
+	}
+	.footer-icons-list {
+	  display: flex;
+	  gap: 16px;
+	}
+
+	.footer-subscribe-form {
+	  display: flex;
+	}
+	.footer-subscribe-input {
+	  width: 264px;
+	  height: 40px;
+	  border: 1px solid rgba(255, 255, 255, 0.3);
+	  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	  border-radius: 4px;
+	  background-color: transparent;
+	  outline: none;
+	  padding-left: 16px;
+	  padding-top: 8px;
+	  padding-bottom: 8px;
+	  margin-right: 24px;
+	  color: rgba(255, 255, 255, 0.6);
+	}
+	.footer-subscribe-btn {
+	  display: flex;
+	  justify-content: space-around;
+	  align-items: center;
+	  background-color: var(--basic-logo-color);
+	  border-radius: 4px;
+	  border-color: var(--basic-logo-color);
+	  width: 165px;
+	  height: 40px;
+	  font-size: 16px;
+	  font-weight: 500;
+	  line-height: 2;
+	  letter-spacing: 0.04em;
+	  color: var(--white-color);
+	  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+	    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	.footer-subscribe-btn:hover,
+	.footer-subscribe-btn:focus {
+	  background-color: var(--hover-color);
+	  border-color: var(--hover-color);
+	}
+
 
 
 
@@ -1071,11 +1152,27 @@ button {
 	.customers {
 		padding: 120px 0;
 	}
-	/* .custumers-list {
-		gap: 24px;
-	} */
 	.customers-item {
 		width: calc((100% - 120px) / 6);
+	}
+
+	.footer {
+		padding-top: 100px;
+  	padding-bottom: 100px;
+  	background: var(--title-color);
+	}
+	.footer-inner {
+		padding-left: 0;
+	}
+	.footer-container {
+	  max-width: 264px;
+	  margin-right: auto;
+	}
+	.footer-inner {
+	  display: flex;
+	}
+	.footer-subscribe {
+	  margin-left: auto;
 	}
 
 
@@ -1246,108 +1343,6 @@ button {
 
 /*==============================FOOTER==============================*/
 
-/* .footer {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background: var(--title-color);
-}
-
-.footer-text {
-  margin-top: 16px;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--footer-color-text);
-}
-
-.footer-container {
-  max-width: 264px;
-  margin-right: auto;
-}
-
-.footer-inner {
-  display: flex;
-} */
-
-/* social media */
-/* .footer-tittle {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--white-color);
-  margin-bottom: 16px;
-}
-
-.footer-link-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: var(--basic-logo-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-link-icons:hover,
-.footer-link-icons:focus {
-  background-color: var(--footer-icons);
-}
-
-.footer-icons-list {
-  display: flex;
-  gap: 16px;
-} */
-
-/* subscribe */
-
-/* .footer-subscribe {
-  margin-left: auto;
-}
-
-.footer-subscribe-form {
-  display: flex;
-}
-
-.footer-subscribe-input {
-  width: 264px;
-  height: 40px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background-color: transparent;
-  outline: none;
-  padding-left: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  margin-right: 24px;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-subscribe-btn {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: var(--basic-logo-color);
-  border-radius: 4px;
-  border-color: var(--basic-logo-color);
-  width: 165px;
-  height: 40px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 2;
-  letter-spacing: 0.04em;
-  color: var(--white-color);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-subscribe-btn:hover,
-.footer-subscribe-btn:focus {
-  background-color: var(--hover-color);
-  border-color: var(--hover-color);
-} */
 
 /*==============================MODAL WINDOW==============================*/
 
