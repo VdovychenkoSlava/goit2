@@ -1,0 +1,106 @@
+:root {
+  --basic-logo-color: #4d5ae5;
+  --title-color: #2e2f42;
+  --main-color-text: #434455;
+  --white-color: #ffffff;
+  --hover-color: #404bbf;
+  --f-color-logo: #f4f4fd;
+  --footer-color-text: #e7e9fc;
+  --background-color: #f4f4fd;
+  --footer-icons: #31d0aa;
+  --customers-border: #8e8f99;
+  --modal-color: #fcfcfc;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body,
+html {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: var(--main-color-text);
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  padding-bottom: 120px;
+}
+
+.characteristic-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+
+
+.footer {
+	background: #1E2827;
+}
+.footer__link img{
+	width: 50px;
+	height: 50px;
+}
+
